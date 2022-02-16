@@ -76,10 +76,37 @@ function emptySongInfo() {
   $(".links").empty();
 }
 
+ // Complete Day 3 goals inside this function
+ // [ ] Declare additional variables and save the values of each input tag
+// [ ] Use .push() to add each input value to the correct array
+
+
 function addSongInfo() {
-  // Complete Day 3 goals inside this function
+  
+let sName = $(".song").val();
+  let sArtist = $(".artist").val();
+  let sLength = $(".length").val();
+  let sLink = $(".link").val();
+  let sImage = $(".image").val();
+
+  let InputSong = {
+    name: sName,
+    artist: sArtist,
+    length: sLength,
+    image: sLink,
+    link: sImage
+  };
+
+  Song.push(InputSong);
 }
 
+  
+  
+  
+  
+  
+  
+  
 $("#add").click(function () {
   emptySongInfo();
   addSongInfo();
