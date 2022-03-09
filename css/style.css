@@ -19,6 +19,7 @@ h1 {
   height: 100px;
   width: auto;
   margin: 20px;
+  border: solid black 2px;
 }
 
 .songs p {

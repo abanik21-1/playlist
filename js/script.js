@@ -24,7 +24,6 @@ let songLink = [
 ];
 console.log(songLink);
 
-
 // Complete the Day 2 goals inside this function
 
 function displaySongInfo() {
@@ -76,37 +75,27 @@ function emptySongInfo() {
   $(".links").empty();
 }
 
- // Complete Day 3 goals inside this function
- // [ ] Declare additional variables and save the values of each input tag
-// [ ] Use .push() to add each input value to the correct array
-
+// Complete Day 3 goals inside this function
 
 function addSongInfo() {
-  
-let sName = $(".song").val();
+  let sName = $(".song").val();
   let sArtist = $(".artist").val();
   let sLength = $(".length").val();
   let sLink = $(".link").val();
   let sImage = $(".image").val();
+};
 
   let InputSong = {
-    name: sName,
-    artist: sArtist,
-    length: sLength,
-    image: sLink,
-    link: sImage
+    name: "sName",
+    artist: "sArtist",
+    length: "sLength",
+    image: "sLink",
+    link: "sImage",
   };
 
-  Song.push(InputSong);
-}
+  InputSong.push(InputSong);
 
-  
-  
-  
-  
-  
-  
-  
+
 $("#add").click(function () {
   emptySongInfo();
   addSongInfo();
@@ -114,3 +103,36 @@ $("#add").click(function () {
 });
 
 displaySongInfo();
+
+// Day 4 Goal 1: Refactor your arrays so all your song information is stored in Objects
+
+let firstsong = {
+  name: "DAYDREAM",
+  artist: "Mohn OFA Rhee",
+  length: "3:43",
+  image: "https://i.scdn.co/image/ab67616d0000b273744174f599e2d0d5384c5421",
+  link: "https://www.youtube.com/watch?v=9IVzPNWRbYE",
+};
+
+let secondsong = {
+  name: "Zehnaseeb",
+  artist: "Chinmayi, Shekhar Ravjian",
+  length: "2:23",
+  image: "https://i.scdn.co/image/ab67616d0000b2732025db071cd9dd7e8023e01e",
+  link: "https://www.youtube.com/watch?v=gjtJ4YgHiXY",
+};
+
+let thirdsong = {
+  name: "Every Summertime",
+  artist: "Niki",
+  length: "3.22",
+  image: "https://images.genius.com/cd1767554b50e0c83a4234bb9a1b7220.1000x1000x1.png",
+  link: "https://www.youtube.com/watch?v=a0OHkWX7B-E",
+};
+
+
+//Day 5 Goal 1: Refactor your loops so all your song information displays correctly on the page
+//[ ] Update your click handler so the input values are saved in as values in a new Object
+//[ ] Update your .push() so the input Object is added to your array of Objects
+//[ ] Update your loops based on your new array of Objects
+  
