@@ -1,5 +1,7 @@
 h1 {
   text-align: center;
+  color: #d5f591;
+  font-size: 45px;
 }
 
 .display {
@@ -7,6 +9,7 @@ h1 {
   justify-content: center;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
+  background-color: #8cdba9;
 }
 
 .column {
@@ -16,27 +19,27 @@ h1 {
 
 .images img {
   display: block;
-  height: 100px;
+  height: 150px;
   width: auto;
   margin: 20px;
   border: solid black 2px;
 }
 
 .songs p {
-  font-size: 18px;
+  font-size: 20px;
   height: 100px;
   font-weight: bold;
   margin: 20px;
 }
 
 .artists p {
-  font-size: 18px;
+  font-size: 20px;
   height: 100px;
   margin: 20px;
 }
 
 .lengths p {
-  font-size: 16px;
+  font-size: 20px;
   height: 100px;
   margin: 20px;
   text-align: right;
@@ -44,7 +47,7 @@ h1 {
 
 .links a {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   height: 100px;
   font-weight: bold;
   margin: 20px;
@@ -64,4 +67,17 @@ input {
 button {
   font-size: 14px;
   padding: 5px 10px;
+}
+
+body {
+background-color: #014421;
+}
+
+.bio {
+  color: white;
+  font-size: 25px;
+}
+
+p {
+  font-size: 25px;
 }
