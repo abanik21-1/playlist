@@ -27,41 +27,27 @@ console.log(songLink);
 // Complete the Day 2 goals inside this function
 
 function displaySongInfo() {
-  let songNames = ["DAYDREAM", "Zehnaseeb", "Every Summertime"];
-  $(".songNames").click(function () {
-    songNames.forEach(function (music) {
-      $(".songs").append("<li>" + music + "</li>");
-    });
+  songTitles.forEach(function (music) {
+    $(".songs").append("<li>" + music + "</li>");
   });
 
-  let artistNamess = ["John OFA Rhee", "Chinmayi, Shekhar Ravjian", "Niki"];
-  $(".artistNamess").click(function () {
-    artistNamess.forEach(function (music) {
-      $(".artists").append("<li>" + music + "</li>");
-    });
+  artistNames.forEach(function (music) {
+    $(".artists").append("<li>" + music + "</li>");
   });
 
-  let songLengthh = ["3:43", "2:23", "3:22"];
-  $(".songLengthh").click(function () {
-    songLengthh.forEach(function (music) {
-      $(".lengths").append("<li>" + music + "</li>");
-    });
+  songLength.forEach(function (music) {
+    $(".lengths").append("<li>" + music + "</li>");
   });
 
-  let songImages = ["3:43", "2:23", "3:22"];
-  $(".songImages").click(function () {
-    songImages.forEach(function (music) {
-      $(".images").append("<li>" + music + "</li>");
-    });
+  songImg.forEach(function (music) {
+    $(".images").append("<li>" + music + "</li>");
   });
 
-  let songLlinks = ["3:43", "2:23", "3:22"];
-  $(".songLlinks").click(function () {
-    songLlinks.forEach(function (music) {
-      $(".links").append("<li>" + music + "</li>");
-    });
+  songLink.forEach(function (music) {
+    $(".links").append("<li>" + music + "</li>");
   });
 }
+displaySongInfo();
 
 function emptySongInfo() {
   /* this function empties the divs each time the button is 
@@ -79,22 +65,30 @@ function emptySongInfo() {
 
 function addSongInfo() {
   let sName = $(".song").val();
+  songTitles.push(sName);
+
   let sArtist = $(".artist").val();
+  artistNames.push(sArtist);
+
   let sLength = $(".length").val();
-  let sLink = $(".link").val();
+  songLength.push(sLength);
+
   let sImage = $(".image").val();
+  songImg.push(sImage);
+
+  let sLink = $(".link").val();
+  songLink.push(sLink);
+}
+
+let InputSong = {
+  name: "sName",
+  artist: "sArtist",
+  length: "sLength",
+  image: "sLink",
+  link: "sImage",
 };
 
-  let InputSong = {
-    name: "sName",
-    artist: "sArtist",
-    length: "sLength",
-    image: "sLink",
-    link: "sImage",
-  };
-
-  InputSong.push(InputSong);
-
+InputSong.push(InputSong);
 
 $("#add").click(function () {
   emptySongInfo();
@@ -106,33 +100,7 @@ displaySongInfo();
 
 // Day 4 Goal 1: Refactor your arrays so all your song information is stored in Objects
 
-let firstsong = {
-  name: "DAYDREAM",
-  artist: "Mohn OFA Rhee",
-  length: "3:43",
-  image: "https://i.scdn.co/image/ab67616d0000b273744174f599e2d0d5384c5421",
-  link: "https://www.youtube.com/watch?v=9IVzPNWRbYE",
-};
-
-let secondsong = {
-  name: "Zehnaseeb",
-  artist: "Chinmayi, Shekhar Ravjian",
-  length: "2:23",
-  image: "https://i.scdn.co/image/ab67616d0000b2732025db071cd9dd7e8023e01e",
-  link: "https://www.youtube.com/watch?v=gjtJ4YgHiXY",
-};
-
-let thirdsong = {
-  name: "Every Summertime",
-  artist: "Niki",
-  length: "3.22",
-  image: "https://images.genius.com/cd1767554b50e0c83a4234bb9a1b7220.1000x1000x1.png",
-  link: "https://www.youtube.com/watch?v=a0OHkWX7B-E",
-};
-
-
 //Day 5 Goal 1: Refactor your loops so all your song information displays correctly on the page
 //[ ] Update your click handler so the input values are saved in as values in a new Object
 //[ ] Update your .push() so the input Object is added to your array of Objects
 //[ ] Update your loops based on your new array of Objects
-  
